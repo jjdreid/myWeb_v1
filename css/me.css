@@ -1,0 +1,84 @@
+/*Common CSS*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(32,35,42);
+  background-color: rgb(244,244,239);
+}
+a:link { color: rgb(160,29,38); }
+a​:active { color: rgb(160,29,38); }
+a:visited {color: rgb(172,190,190);}
+a​:hover { color: rgb(160,29,38); }
+.abtmeGrid {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spacing {
+    height: 15px;
+}
+
+.pictureMe img {
+    padding-bottom: 10px;
+}
+
+.abtMeText p {
+    text-align: left;
+    line-height: 25px;
+}
+
+.skillseticonsGrid {
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconimg img {
+    width: 60px;
+}
+
+/*Desktop*/
+@media (min-width: 928px) {
+    .abtmeGrid {
+        width: 800px;
+        padding-top: 50px;
+    }
+
+    .pictureMe img {
+        width: 40%;
+    }
+
+    .skillseticonsGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 40px;
+        width: 80%;
+        margin: 0 auto
+    }
+}
+
+/*Mobile*/
+@media (max-width: 927px) {
+    .abtmeGrid {
+        width: 100%;
+        padding-top:50px;
+    }
+
+    .pictureMe img {
+        width: 50%;
+    }
+
+    .abtMeText p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .skillseticonsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 60px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+}

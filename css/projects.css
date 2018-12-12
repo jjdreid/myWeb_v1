@@ -1,0 +1,56 @@
+.projectPic a {
+    text-decoration: none;
+    color: rgba(32,35,42,.85);
+}
+
+.projectGrid a {
+    text-decoration: none;
+    color: rgba(32,35,42,.85);
+}
+
+.projectGrid > .projectPic {
+    background-color: rgb(244,244,239);
+}
+
+.projectGrid img {
+    width: 100%;
+}
+
+.projectGrid p {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+
+@media (min-width: 928px) {
+
+    .projectGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .projectPic {
+        transition: .2s;
+    }
+
+    .projectPic:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+@media (max-width: 927px) {
+
+    .projectGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
