@@ -1,6 +1,5 @@
 .contactIconsGrid {
     display: grid;
-    padding-top: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     margin: 0 auto;
